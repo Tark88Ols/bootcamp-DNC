@@ -315,5 +315,16 @@
       font-size: 17px;  
 
     }
+    /* FOOTER*/
+
+    footer .linha1{
+        flex-direction: column;
+
+    }
+    footer .endereco{
+       width: 95%;
+       margin: 20px 0 20px 0;
+       font-size: 10px;
+    }
 
   }
