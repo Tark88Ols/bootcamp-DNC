@@ -42,7 +42,7 @@
      #principal {
          width: 100%;
          height: 100px;
-         border: solid white;
+         /*border: solid white;*/
 
          background-color:var(--pretoDNC);
 
@@ -186,5 +186,134 @@
     margin-top: 60px;
     box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
     cursor: pointer;  
+  }
+  /* Footer */
+
+  footer{
+    width: 100%;
+    background-color: var(--azulDNC);
+  }
+  footer .linha1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+ 
+    
+  }
+  footer h5{
+    text-align: center;
+    color: white;
+    font-family: var(--FontePadrao);
+    font-size: 18px;
+    background-color: var(--pretoDNC);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+  }
+  footer ul li{
+    text-align: center;
+    color: white;
+    font-family: var(--FontePadrao);
+    font-size: 18px;
+    margin:20px 0 20px 0;
+
+  }
+  footer ul li a{
+    color: white;
+    text-decoration: none;
+    
+  }
+  footer ul li a:hover{
+    color: var(--cinzaHover);
+  }
+  footer .endereco{
+    text-align: center;
+    color: white;
+    font-family: var(--FontePadrao);
+    font-size: 18px;
+    width: 20%;
+  }
+  footer .linha2{
+    height: 30px;
+    display: flex;
+    justify-content:center ;
+    margin:0;
+    padding: 10px;
+    
+  }
+  footer .linha2 a{
+    text-align: center;
+    color: white;
+    font-family: var(--FontePadrao);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px;
+
+  }
+  footer .linha2 a:hover{
+    color: var(--cinzaHover);
+  }
+  footer .linha2 a:first-child{
+    border-right: 2px solid white;
+  }
+
+  @media only screen and (max-width: 600px){
+    
+    #principal{
+        height: auto;
+        flex-direction: column;
+    }
+    #menuSuperior{
+        flex-direction: column;
+        width: 100%;  
+        padding: 0px;      
+    }
+    #menuSuperior a{
+        height: 50px;
+        align-items: center;
+    }
+
+    #principal button{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+    /* Section */
+
+    section h1{
+        font-size: 38px;
+
+    }
+
+    section h2{
+        font-size: 20px;
+    }
+
+    /* Formulario*/
+
+    form {
+
+       width: 95%;
+       font-size: 20px;
+
+    }
+
+    .checkboxItens label{
+      font-size: 17px;  
+
+    }
 
   }
